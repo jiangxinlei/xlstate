@@ -1,5 +1,5 @@
 import React from "react"
-import { Provider, useGloContext } from "./state";
+import { Provider, useGloContext } from "./store";
 import { render } from "react-dom";
 
 function UserInfo() {

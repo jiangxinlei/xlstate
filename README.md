@@ -17,7 +17,7 @@ npm install --save xlstate
 
 ### Example
 
-```
+```js
 // state - 创建 state 和 reducer
 import { createContainer } from "../src/xlstate";
 const STATES = {
@@ -46,7 +46,7 @@ export {
 }
 ```
 
-```
+```js
 // 使用
 import React from "react"
 import { render } from "react-dom";
