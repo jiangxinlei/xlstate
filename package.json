@@ -1,0 +1,51 @@
+{
+  "name": "xlstate",
+  "version": "0.0.1",
+  "description": "React state management libraries",
+  "source": "src/xlstate.tsx",
+	"main": "dist/xlstate.js",
+	"module": "dist/xlstate.mjs",
+	"unpkg": "dist/xlstate.umd.js",
+	"types": "dist/xlstate.d.ts",
+	"amdName": "xlstate",
+  "scripts": {
+    "demo": "parcel demo/index.html --out-dir demo/dist",
+		"build": "rm -rf dist && microbundle --external react --globals react=React --strict --no-compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangxinlei/xlstate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jiangxinlei/xlstate/issues"
+  },
+  "keywords": [
+    "state management"
+  ],
+  "author": "jiangxinlei",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "microbundle": "^0.11.0",
+    "parcel": "^1.12.4",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
