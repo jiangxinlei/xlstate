@@ -2,7 +2,7 @@
 
 > 参考：[unstated-next](https://github.com/jamiebuilds/unstated-next)
 
-为了快速开发和调试，xlstate 完全借鉴了 unstated-next 的配置和写法，在此基础上做了一些调整。
+为了快速开发和调试，xlstate 借鉴了 unstated-next 的配置和写法，在此基础上做了一些调整。
 
 ### 与 unstated-next 区别
 
