@@ -1,6 +1,6 @@
 {
   "name": "xlstate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React state management libraries",
   "source": "src/xlstate.tsx",
 	"main": "dist/xlstate.js",
@@ -9,7 +9,7 @@
 	"types": "dist/xlstate.d.ts",
 	"amdName": "xlstate",
   "scripts": {
-    "demo": "parcel demo/index.html --out-dir demo/dist",
+    "demo": "parcel demo/index.html --out-dir demo/dist --open --no-cache",
 		"build": "rm -rf dist && microbundle --external react --globals react=React --strict --no-compress"
   },
   "repository": {

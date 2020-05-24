@@ -1,7 +1,7 @@
 // prettier-ignore
 {
   "include": ["src"],
-  "exclude": ["test", "example"],
+  "exclude": ["demo"],
   "compilerOptions": {
     "target": "ES5",
     "module": "ES2015",
