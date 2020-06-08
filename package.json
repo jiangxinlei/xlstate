@@ -1,6 +1,6 @@
 {
   "name": "xlstate",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React state management libraries",
   "source": "src/xlstate.tsx",
 	"main": "dist/xlstate.js",
@@ -20,7 +20,9 @@
     "url": "https://github.com/jiangxinlei/xlstate/issues"
   },
   "keywords": [
-    "state management"
+    "state management",
+    "xlstate",
+    "state"
   ],
   "author": "jiangxinlei",
   "license": "MIT",
