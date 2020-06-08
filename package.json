@@ -1,6 +1,6 @@
 {
   "name": "xlstate",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React state management libraries",
   "source": "src/xlstate.tsx",
 	"main": "dist/xlstate.js",

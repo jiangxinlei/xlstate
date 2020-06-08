@@ -25,7 +25,7 @@ export function createContainer<Value, State = void>(
       (state: State, action: { type: React.ReactText; payload: any}) => reducers[action.type](state, action),
       states
     );
-    return <Context.Provider value={{dispatch, ...reducerStates, globalVal}}>{children}</Context.Provider>
+    return <Context.Provider value={{dispatch, ...reducerStates, ...globalVal}}>{children}</Context.Provider>
   }
 
   function useGloContext(): Value {

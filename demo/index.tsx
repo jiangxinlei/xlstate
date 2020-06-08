@@ -3,9 +3,8 @@ import { Provider, useGloContext } from "./store";
 import { render } from "react-dom";
 
 function UserInfo() {
-	const global = useGloContext();
-	const { info, dispatch } = global;
-	console.log(global);
+	const { info, dispatch, name } = useGloContext();
+	console.log(name);
  	return (
 		<div>
 			<button onClick={() => {
@@ -26,7 +25,7 @@ function UserInfo() {
 function App() {
 	const name = 'jxl';
 	return (
-		<Provider globalVal={name}>
+		<Provider globalVal={{ name }}>
 			<UserInfo />
 		</Provider>
 	)
