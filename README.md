@@ -54,9 +54,8 @@ import { Provider, useGloContext } from "./state";
 
 // 在自组件中调用  useGloContext 方法获取全局 context 值
 function UserInfo() {
-	const global = useGloContext();
-	const { info, dispatch } = global;
-	console.log(global);
+	const { info, dispatch, name } = useGloContext();
+	console.log(name);
  	return (
 		<div>
 			<button onClick={() => {
@@ -68,7 +67,7 @@ function UserInfo() {
 					}
 				})
 			}}>change info</button>
-			<p>{info.name}</p>
+			<p>{name}</p>
 			<p>{info.age}</p>
 		</div>
 	)
@@ -78,7 +77,7 @@ function UserInfo() {
 function App() {
 	const name = 'jxl';
 	return (
-		<Provider globalVal={name}>
+		<Provider globalVal={{ name }}>
 			<UserInfo />
 		</Provider>
 	)
