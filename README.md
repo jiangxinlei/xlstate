@@ -87,7 +87,7 @@ render(<App />, document.getElementById("root"))
 
 ## 其他奇技用法
 
-### 1、多 Provider
+### 1、多 Provider 嵌套
 
 - 创建两个 reducer
 
