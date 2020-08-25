@@ -5,3 +5,5 @@ dist
 .rts2_cache_*
 .cache
 .vscode
+.DS_Store
+yarn.lock
