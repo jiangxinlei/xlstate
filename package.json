@@ -1,53 +1,55 @@
 {
-  "name": "xlstate",
-  "version": "0.0.6",
-  "description": "React state management libraries",
-  "source": "src/xlstate.tsx",
+	"name": "xlstate",
+	"version": "0.0.7",
+	"description": "React state management libraries",
+	"source": "src/xlstate.tsx",
 	"main": "dist/xlstate.js",
-	"module": "dist/xlstate.mjs",
+	"module": "dist/xlstate.m.js",
+	"esmodule": "dist/xlstate.modern.js",
 	"unpkg": "dist/xlstate.umd.js",
 	"types": "dist/xlstate.d.ts",
 	"amdName": "xlstate",
-  "scripts": {
-    "demo": "parcel demo/index.html --out-dir demo/dist --open --no-cache",
+	"scripts": {
+		"demo_one": "parcel demo_one/index.html --out-dir demo/dist --open --no-cache",
+		"demo_two": "parcel demo_two/index.html --out-dir demo/dist --open --no-cache",
 		"build": "rm -rf dist && microbundle --external react --globals react=React --strict --no-compress"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jiangxinlei/xlstate.git"
-  },
-  "bugs": {
-    "url": "https://github.com/jiangxinlei/xlstate/issues"
-  },
-  "keywords": [
-    "state management",
-    "xlstate",
-    "state"
-  ],
-  "author": "jiangxinlei",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/react": "^16.9.35",
-    "@types/react-dom": "^16.9.8",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.2",
-    "microbundle": "^0.11.0",
-    "parcel": "^1.12.4",
-    "prettier": "^2.0.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "ts-node": "^8.10.1",
-    "typescript": "^3.9.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*": [
-      "prettier --write",
-      "git add"
-    ]
-  }
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jiangxinlei/xlstate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/jiangxinlei/xlstate/issues"
+	},
+	"keywords": [
+		"state management",
+		"xlstate",
+		"state"
+	],
+	"author": "jiangxinlei",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.9.35",
+		"@types/react-dom": "^16.9.8",
+		"husky": "^4.2.5",
+		"lint-staged": "^10.2.2",
+		"microbundle": "^0.11.0",
+		"parcel": "^1.12.4",
+		"prettier": "^2.0.5",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"ts-node": "^8.10.1",
+		"typescript": "^3.9.2"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*": [
+			"prettier --write",
+			"git add"
+		]
+	}
 }
